@@ -231,7 +231,7 @@ class TodoController {
       }
     });
 
-    // 4. 수정 완료 (Enter)(Esc)
+    // 수정 완료 (Enter)(Esc)
     on(this.view.todoListElement, 'keyup', (e) => {
       if (!e.target.classList.contains('edit')) return;
       
@@ -247,7 +247,7 @@ class TodoController {
       }
     });
 
-    // 5. 수정값 저장
+    // 수정값 저장
     on(this.view.todoListElement, 'focusout', (e) => {
       if (!e.target.classList.contains('edit')) return;
       
